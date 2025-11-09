@@ -1,0 +1,50 @@
+[0.014s] Invoking command in '/home/chrono/vesc_ws/build/vesc_driver': AMENT_PREFIX_PATH=/home/chrono/vesc_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chrono/vesc_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/chrono/vesc_ws/src/vesc/vesc_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/chrono/vesc_ws/install/vesc_driver
+[0.128s] -- The C compiler identification is GNU 13.3.0
+[0.248s] -- The CXX compiler identification is GNU 13.3.0
+[0.276s] -- Detecting C compiler ABI info
+[0.453s] -- Detecting C compiler ABI info - done
+[0.468s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.468s] -- Detecting C compile features
+[0.468s] -- Detecting C compile features - done
+[0.483s] -- Detecting CXX compiler ABI info
+[0.677s] -- Detecting CXX compiler ABI info - done
+[0.691s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.692s] -- Detecting CXX compile features
+[0.693s] -- Detecting CXX compile features - done
+[0.695s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[0.940s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.074s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.345s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.364s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.386s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.411s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.514s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.518s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.639s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.671s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.709s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.971s] [31mCMake Error at /opt/ros/jazzy/share/io_context/cmake/io_context-extras.cmake:17 (find_package):
+[1.971s]   By not providing "Findasio_cmake_module.cmake" in CMAKE_MODULE_PATH this
+[1.971s]   project has asked CMake to find a package configuration file provided by
+[1.971s]   "asio_cmake_module", but CMake did not find one.
+[1.971s] 
+[1.971s]   Could not find a package configuration file provided by "asio_cmake_module"
+[1.971s]   with any of the following names:
+[1.971s] 
+[1.971s]     asio_cmake_moduleConfig.cmake
+[1.971s]     asio_cmake_module-config.cmake
+[1.972s] 
+[1.972s]   Add the installation prefix of "asio_cmake_module" to CMAKE_PREFIX_PATH or
+[1.972s]   set "asio_cmake_module_DIR" to a directory containing one of the above
+[1.972s]   files.  If "asio_cmake_module" provides a separate development package or
+[1.972s]   SDK, be sure it has been installed.
+[1.972s] Call Stack (most recent call first):
+[1.972s]   /opt/ros/jazzy/share/io_context/cmake/io_contextConfig.cmake:41 (include)
+[1.972s]   /opt/ros/jazzy/share/serial_driver/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.972s]   /opt/ros/jazzy/share/serial_driver/cmake/serial_driverConfig.cmake:41 (include)
+[1.972s]   /opt/ros/jazzy/share/ament_cmake_auto/cmake/ament_auto_find_build_dependencies.cmake:67 (find_package)
+[1.972s]   CMakeLists.txt:14 (ament_auto_find_build_dependencies)
+[1.972s] 
+[1.972s] [0m
+[1.973s] -- Configuring incomplete, errors occurred!
+[1.991s] Invoked command in '/home/chrono/vesc_ws/build/vesc_driver' returned '1': AMENT_PREFIX_PATH=/home/chrono/vesc_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chrono/vesc_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/chrono/vesc_ws/src/vesc/vesc_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/chrono/vesc_ws/install/vesc_driver

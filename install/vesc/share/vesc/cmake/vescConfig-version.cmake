@@ -1,0 +1,1 @@
+/home/chrono/vesc_ws/build/vesc/ament_cmake_core/vescConfig-version.cmake

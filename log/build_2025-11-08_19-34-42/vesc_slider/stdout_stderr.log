@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing vesc_slider.egg-info/PKG-INFO
+writing dependency_links to vesc_slider.egg-info/dependency_links.txt
+writing entry points to vesc_slider.egg-info/entry_points.txt
+writing requirements to vesc_slider.egg-info/requires.txt
+writing top-level names to vesc_slider.egg-info/top_level.txt
+reading manifest file 'vesc_slider.egg-info/SOURCES.txt'
+writing manifest file 'vesc_slider.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages/vesc-slider.egg-link (link to .)
+Installing vesc_slider script to /home/chrono/vesc_ws/install/vesc_slider/lib/vesc_slider
+
+Installed /home/chrono/vesc_ws/build/vesc_slider
+running symlink_data

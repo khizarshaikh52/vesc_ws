@@ -1,0 +1,101 @@
+[0.014s] Invoking command in '/home/chrono/vesc_ws/build/vesc_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chrono/vesc_ws/src/vesc/vesc_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/chrono/vesc_ws/install/vesc_driver
+[0.134s] -- The C compiler identification is GNU 13.3.0
+[0.252s] -- The CXX compiler identification is GNU 13.3.0
+[0.279s] -- Detecting C compiler ABI info
+[0.458s] -- Detecting C compiler ABI info - done
+[0.472s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.473s] -- Detecting C compile features
+[0.473s] -- Detecting C compile features - done
+[0.487s] -- Detecting CXX compiler ABI info
+[0.688s] -- Detecting CXX compiler ABI info - done
+[0.703s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.703s] -- Detecting CXX compile features
+[0.704s] -- Detecting CXX compile features - done
+[0.707s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[0.956s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.099s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.371s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.390s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.412s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.437s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.540s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.543s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.664s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.690s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.727s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.978s] -- Found asio_cmake_module: 1.2.0 (/opt/ros/jazzy/share/asio_cmake_module/cmake)
+[1.979s] -- Found ASIO: /usr/include  
+[2.066s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.220s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.222s] -- Found Threads: TRUE  
+[2.250s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.279s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/vesc_driver` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[2.287s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.290s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.291s] -- Configured cppcheck include dirs: /home/chrono/vesc_ws/src/vesc/vesc_driver/include
+[2.291s] -- Configured cppcheck exclude dirs and/or files: 
+[2.293s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.293s] -- Configured cpplint exclude dirs and/or files: 
+[2.294s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.294s] -- Configured 'flake8' exclude dirs and/or files: 
+[2.295s] -- Added test 'lint_cmake' to check CMake code style
+[2.296s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.298s] -- Added test 'uncrustify' to check C / C++ code style
+[2.299s] -- Configured uncrustify additional arguments: 
+[2.299s] -- Added test 'xmllint' to check XML markup files
+[2.305s] -- Configuring done (2.3s)
+[2.397s] -- Generating done (0.1s)
+[2.421s] -- Build files have been written to: /home/chrono/vesc_ws/build/vesc_driver
+[2.459s] Invoked command in '/home/chrono/vesc_ws/build/vesc_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chrono/vesc_ws/src/vesc/vesc_driver -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/chrono/vesc_ws/install/vesc_driver
+[2.461s] Invoking command in '/home/chrono/vesc_ws/build/vesc_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chrono/vesc_ws/build/vesc_driver -- -j4 -l4
+[2.649s] [ 10%] [32mBuilding CXX object CMakeFiles/vesc_driver_node.dir/rclcpp_components/node_main_vesc_driver_node.cpp.o[0m
+[2.650s] [ 20%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_driver.cpp.o[0m
+[2.669s] [ 30%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o[0m
+[2.669s] [ 40%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_packet.cpp.o[0m
+[5.421s] [ 50%] [32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_packet_factory.cpp.o[0m
+[17.585s] [ 60%] [32m[1mLinking CXX executable vesc_driver_node[0m
+[18.498s] [ 60%] Built target vesc_driver_node
+[28.474s] [ 70%] [32m[1mLinking CXX shared library libvesc_driver.so[0m
+[30.741s] [ 70%] Built target vesc_driver
+[30.787s] [ 90%] [32mBuilding CXX object CMakeFiles/vesc_device_namer.dir/src/vesc_device_uuid_lookup.cpp.o[0m
+[30.788s] [ 90%] [32mBuilding CXX object CMakeFiles/vesc_device_namer.dir/src/vesc_device_namer.cpp.o[0m
+[32.811s] [100%] [32m[1mLinking CXX executable vesc_device_namer[0m
+[34.217s] [100%] Built target vesc_device_namer
+[34.239s] Invoked command in '/home/chrono/vesc_ws/build/vesc_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chrono/vesc_ws/build/vesc_driver -- -j4 -l4
+[34.241s] Invoking command in '/home/chrono/vesc_ws/build/vesc_driver': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/chrono/vesc_ws/build/vesc_driver
+[34.255s] -- Install configuration: ""
+[34.262s] -- Execute custom install script
+[34.262s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/lib/vesc_driver/vesc_driver_node
+[34.281s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/include/vesc_driver/crc.hpp
+[34.298s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/include/vesc_driver/datatypes.hpp
+[34.316s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/include/vesc_driver/vesc_device_uuid_lookup.hpp
+[34.333s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/include/vesc_driver/vesc_driver.hpp
+[34.350s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/include/vesc_driver/vesc_interface.hpp
+[34.367s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/include/vesc_driver/vesc_packet.hpp
+[34.384s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/include/vesc_driver/vesc_packet_factory.hpp
+[34.400s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/environment/library_path.sh
+[34.418s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/environment/library_path.dsv
+[34.436s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/lib/libvesc_driver.so
+[34.453s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/lib/vesc_driver/vesc_device_namer
+[34.470s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/launch/vesc_driver_node.launch.py
+[34.487s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/params/vesc_config.yaml
+[34.510s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/ament_index/resource_index/package_run_dependencies/vesc_driver
+[34.528s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/ament_index/resource_index/parent_prefix_path/vesc_driver
+[34.546s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.sh
+[34.562s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.dsv
+[34.580s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/environment/path.sh
+[34.597s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/environment/path.dsv
+[34.613s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/local_setup.bash
+[34.629s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/local_setup.sh
+[34.647s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/local_setup.zsh
+[34.663s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/local_setup.dsv
+[34.680s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/package.dsv
+[34.696s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/ament_index/resource_index/packages/vesc_driver
+[34.713s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/ament_index/resource_index/rclcpp_components/vesc_driver
+[34.731s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+[34.747s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+[34.764s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_libraries-extras.cmake
+[34.780s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig.cmake
+[34.797s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig-version.cmake
+[34.815s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/package.xml
+[34.834s] Invoked command in '/home/chrono/vesc_ws/build/vesc_driver' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/chrono/vesc_ws/build/vesc_driver

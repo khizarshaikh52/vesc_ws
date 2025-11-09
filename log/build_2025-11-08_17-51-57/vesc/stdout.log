@@ -1,0 +1,22 @@
+-- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/chrono/vesc_ws/build/vesc
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/ament_index/resource_index/package_run_dependencies/vesc
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/ament_index/resource_index/parent_prefix_path/vesc
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/vesc/environment/ament_prefix_path.sh
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/vesc/environment/ament_prefix_path.dsv
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/vesc/environment/path.sh
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/vesc/environment/path.dsv
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/vesc/local_setup.bash
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/vesc/local_setup.sh
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/vesc/local_setup.zsh
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/vesc/local_setup.dsv
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/vesc/package.dsv
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/ament_index/resource_index/packages/vesc
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/vesc/cmake/vescConfig.cmake
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/vesc/cmake/vescConfig-version.cmake
+-- Symlinking: /home/chrono/vesc_ws/install/vesc/share/vesc/package.xml

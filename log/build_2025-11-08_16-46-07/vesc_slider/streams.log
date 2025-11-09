@@ -1,0 +1,21 @@
+[1.130s] Invoking command in '/home/chrono/vesc_ws/src/vesc_slider': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/chrono/vesc_ws/build/vesc_slider/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vesc_slider build --build-base /home/chrono/vesc_ws/build/vesc_slider/build install --record /home/chrono/vesc_ws/build/vesc_slider/install.log --single-version-externally-managed install_data
+[1.469s] running egg_info
+[1.491s] writing ../../build/vesc_slider/vesc_slider.egg-info/PKG-INFO
+[1.492s] writing dependency_links to ../../build/vesc_slider/vesc_slider.egg-info/dependency_links.txt
+[1.498s] writing entry points to ../../build/vesc_slider/vesc_slider.egg-info/entry_points.txt
+[1.499s] writing requirements to ../../build/vesc_slider/vesc_slider.egg-info/requires.txt
+[1.499s] writing top-level names to ../../build/vesc_slider/vesc_slider.egg-info/top_level.txt
+[1.549s] reading manifest file '../../build/vesc_slider/vesc_slider.egg-info/SOURCES.txt'
+[1.550s] writing manifest file '../../build/vesc_slider/vesc_slider.egg-info/SOURCES.txt'
+[1.550s] running build
+[1.550s] running build_py
+[1.550s] running install
+[1.559s] running install_lib
+[1.583s] running install_data
+[1.583s] running install_egg_info
+[1.608s] removing '/home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages/vesc_slider-0.0.0-py3.12.egg-info' (and everything under it)
+[1.608s] Copying ../../build/vesc_slider/vesc_slider.egg-info to /home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages/vesc_slider-0.0.0-py3.12.egg-info
+[1.610s] running install_scripts
+[1.776s] Installing vesc_slider script to /home/chrono/vesc_ws/install/vesc_slider/lib/vesc_slider
+[1.776s] writing list of installed files to '/home/chrono/vesc_ws/build/vesc_slider/install.log'
+[1.859s] Invoked command in '/home/chrono/vesc_ws/src/vesc_slider' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/chrono/vesc_ws/build/vesc_slider/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/vesc_slider build --build-base /home/chrono/vesc_ws/build/vesc_slider/build install --record /home/chrono/vesc_ws/build/vesc_slider/install.log --single-version-externally-managed install_data

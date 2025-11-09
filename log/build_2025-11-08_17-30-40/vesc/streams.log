@@ -1,0 +1,39 @@
+[0.027s] Invoking command in '/home/chrono/vesc_ws/build/vesc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chrono/vesc_ws/install/vesc_slider:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake /home/chrono/vesc_ws/src/vesc/vesc -DCMAKE_INSTALL_PREFIX=/home/chrono/vesc_ws/install/vesc
+[0.497s] -- The C compiler identification is GNU 13.3.0
+[0.882s] -- The CXX compiler identification is GNU 13.3.0
+[0.924s] -- Detecting C compiler ABI info
+[1.123s] -- Detecting C compiler ABI info - done
+[1.138s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.145s] -- Detecting C compile features
+[1.146s] -- Detecting C compile features - done
+[1.168s] -- Detecting CXX compiler ABI info
+[1.363s] -- Detecting CXX compiler ABI info - done
+[1.381s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.381s] -- Detecting CXX compile features
+[1.382s] -- Detecting CXX compile features - done
+[1.392s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[1.627s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.962s] -- Configuring done (1.9s)
+[1.967s] -- Generating done (0.0s)
+[1.972s] -- Build files have been written to: /home/chrono/vesc_ws/build/vesc
+[1.981s] Invoked command in '/home/chrono/vesc_ws/build/vesc' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chrono/vesc_ws/install/vesc_slider:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake /home/chrono/vesc_ws/src/vesc/vesc -DCMAKE_INSTALL_PREFIX=/home/chrono/vesc_ws/install/vesc
+[1.983s] Invoking command in '/home/chrono/vesc_ws/build/vesc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chrono/vesc_ws/install/vesc_slider:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/chrono/vesc_ws/build/vesc -- -j4 -l4
+[2.054s] Invoked command in '/home/chrono/vesc_ws/build/vesc' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chrono/vesc_ws/install/vesc_slider:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/chrono/vesc_ws/build/vesc -- -j4 -l4
+[2.056s] Invoking command in '/home/chrono/vesc_ws/build/vesc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chrono/vesc_ws/install/vesc_slider:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/chrono/vesc_ws/build/vesc
+[2.073s] -- Install configuration: ""
+[2.073s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/ament_index/resource_index/package_run_dependencies/vesc
+[2.074s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/ament_index/resource_index/parent_prefix_path/vesc
+[2.075s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/vesc/environment/ament_prefix_path.sh
+[2.075s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/vesc/environment/ament_prefix_path.dsv
+[2.075s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/vesc/environment/path.sh
+[2.076s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/vesc/environment/path.dsv
+[2.076s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/vesc/local_setup.bash
+[2.076s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/vesc/local_setup.sh
+[2.076s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/vesc/local_setup.zsh
+[2.076s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/vesc/local_setup.dsv
+[2.076s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/vesc/package.dsv
+[2.077s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/ament_index/resource_index/packages/vesc
+[2.077s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/vesc/cmake/vescConfig.cmake
+[2.077s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/vesc/cmake/vescConfig-version.cmake
+[2.077s] -- Installing: /home/chrono/vesc_ws/install/vesc/share/vesc/package.xml
+[2.081s] Invoked command in '/home/chrono/vesc_ws/build/vesc' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/chrono/vesc_ws/install/vesc_slider:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/chrono/vesc_ws/build/vesc

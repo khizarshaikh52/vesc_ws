@@ -1,0 +1,820 @@
+[0.000000] (-) TimerEvent: {}
+[0.000377] (-) JobUnselected: {'identifier': 'vesc'}
+[0.000430] (vesc_msgs) JobQueued: {'identifier': 'vesc_msgs', 'dependencies': OrderedDict()}
+[0.000457] (vesc_ackermann) JobQueued: {'identifier': 'vesc_ackermann', 'dependencies': OrderedDict({'vesc_msgs': '/home/chrono/vesc_ws/install/vesc_msgs'})}
+[0.000484] (vesc_driver) JobQueued: {'identifier': 'vesc_driver', 'dependencies': OrderedDict({'vesc_msgs': '/home/chrono/vesc_ws/install/vesc_msgs'})}
+[0.001014] (vesc_msgs) JobStarted: {'identifier': 'vesc_msgs'}
+[0.013152] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'cmake'}
+[0.013970] (vesc_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/chrono/vesc_ws/src/vesc/vesc_msgs', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/chrono/vesc_ws/install/vesc_msgs'], 'cwd': '/home/chrono/vesc_ws/build/vesc_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'chrono', 'SSH_CLIENT': '10.140.125.222 26742 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/chrono', 'OLDPWD': '/home/chrono/vesc_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/chrono/vesc_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'chrono', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/chrono/vesc_ws/build/vesc_msgs', 'SSH_CONNECTION': '10.140.125.222 26742 10.141.194.197 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099755] (-) TimerEvent: {}
+[0.120534] (vesc_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.199931] (-) TimerEvent: {}
+[0.220380] (vesc_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.247917] (vesc_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300069] (-) TimerEvent: {}
+[0.400530] (-) TimerEvent: {}
+[0.407645] (vesc_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.422725] (vesc_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.423136] (vesc_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.423750] (vesc_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.437925] (vesc_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.500652] (-) TimerEvent: {}
+[0.601026] (-) TimerEvent: {}
+[0.612644] (vesc_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.628205] (vesc_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.628651] (vesc_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.629378] (vesc_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.632561] (vesc_msgs) StdoutLine: {'line': b'-- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)\n'}
+[0.701110] (-) TimerEvent: {}
+[0.801405] (-) TimerEvent: {}
+[0.849185] (vesc_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.901486] (-) TimerEvent: {}
+[0.966252] (vesc_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.001575] (-) TimerEvent: {}
+[1.101838] (-) TimerEvent: {}
+[1.159600] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.201917] (-) TimerEvent: {}
+[1.224103] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.279925] (vesc_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[1.301993] (-) TimerEvent: {}
+[1.402225] (-) TimerEvent: {}
+[1.502512] (-) TimerEvent: {}
+[1.602795] (-) TimerEvent: {}
+[1.703096] (-) TimerEvent: {}
+[1.803410] (-) TimerEvent: {}
+[1.903767] (-) TimerEvent: {}
+[2.004078] (-) TimerEvent: {}
+[2.104357] (-) TimerEvent: {}
+[2.191525] (vesc_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[2.204433] (-) TimerEvent: {}
+[2.304670] (-) TimerEvent: {}
+[2.404939] (-) TimerEvent: {}
+[2.505222] (-) TimerEvent: {}
+[2.605534] (-) TimerEvent: {}
+[2.705870] (-) TimerEvent: {}
+[2.806190] (-) TimerEvent: {}
+[2.906474] (-) TimerEvent: {}
+[2.963604] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.006553] (-) TimerEvent: {}
+[3.106811] (-) TimerEvent: {}
+[3.207155] (-) TimerEvent: {}
+[3.307478] (-) TimerEvent: {}
+[3.407842] (-) TimerEvent: {}
+[3.508204] (-) TimerEvent: {}
+[3.608493] (-) TimerEvent: {}
+[3.708823] (-) TimerEvent: {}
+[3.809126] (-) TimerEvent: {}
+[3.909436] (-) TimerEvent: {}
+[3.984028] (vesc_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.987799] (vesc_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[4.009508] (-) TimerEvent: {}
+[4.109785] (-) TimerEvent: {}
+[4.197209] (vesc_msgs) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[4.209878] (-) TimerEvent: {}
+[4.310199] (-) TimerEvent: {}
+[4.410565] (-) TimerEvent: {}
+[4.511014] (-) TimerEvent: {}
+[4.611383] (-) TimerEvent: {}
+[4.711674] (-) TimerEvent: {}
+[4.811975] (-) TimerEvent: {}
+[4.887405] (vesc_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[4.912042] (-) TimerEvent: {}
+[4.982878] (vesc_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[5.012129] (-) TimerEvent: {}
+[5.014517] (vesc_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[5.016829] (vesc_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.018191] (vesc_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.022234] (vesc_msgs) StdoutLine: {'line': b'-- Configuring done (5.0s)\n'}
+[5.112240] (-) TimerEvent: {}
+[5.116111] (vesc_msgs) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[5.166297] (vesc_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/chrono/vesc_ws/build/vesc_msgs\n'}
+[5.188804] (vesc_msgs) CommandEnded: {'returncode': 0}
+[5.189514] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'build'}
+[5.190276] (vesc_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chrono/vesc_ws/build/vesc_msgs', '--', '-j4', '-l4'], 'cwd': '/home/chrono/vesc_ws/build/vesc_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'chrono', 'SSH_CLIENT': '10.140.125.222 26742 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/chrono', 'OLDPWD': '/home/chrono/vesc_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/chrono/vesc_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'chrono', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/chrono/vesc_ws/build/vesc_msgs', 'SSH_CONNECTION': '10.140.125.222 26742 10.141.194.197 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.212348] (-) TimerEvent: {}
+[5.283628] (vesc_msgs) StdoutLine: {'line': b'[  1%] Built target vesc_msgs__rosidl_generator_type_description\n'}
+[5.301077] (vesc_msgs) StdoutLine: {'line': b'[  1%] Built target ament_cmake_python_symlink_vesc_msgs\n'}
+[5.312493] (-) TimerEvent: {}
+[5.322829] (vesc_msgs) StdoutLine: {'line': b'[  3%] Built target vesc_msgs__cpp\n'}
+[5.332824] (vesc_msgs) StdoutLine: {'line': b'[ 25%] Built target vesc_msgs__rosidl_generator_c\n'}
+[5.382417] (vesc_msgs) StdoutLine: {'line': b'[ 34%] Built target vesc_msgs__rosidl_typesupport_introspection_c\n'}
+[5.389733] (vesc_msgs) StdoutLine: {'line': b'[ 53%] Built target vesc_msgs__rosidl_typesupport_fastrtps_c\n'}
+[5.390180] (vesc_msgs) StdoutLine: {'line': b'[ 53%] Built target vesc_msgs__rosidl_typesupport_c\n'}
+[5.412611] (-) TimerEvent: {}
+[5.439780] (vesc_msgs) StdoutLine: {'line': b'[ 62%] Built target vesc_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[5.443065] (vesc_msgs) StdoutLine: {'line': b'[ 71%] Built target vesc_msgs__rosidl_typesupport_introspection_cpp\n'}
+[5.447510] (vesc_msgs) StdoutLine: {'line': b'[ 81%] Built target vesc_msgs__rosidl_typesupport_cpp\n'}
+[5.484333] (vesc_msgs) StdoutLine: {'line': b'[ 81%] Built target vesc_msgs\n'}
+[5.512736] (-) TimerEvent: {}
+[5.521933] (vesc_msgs) StdoutLine: {'line': b'[ 82%] Built target vesc_msgs__py\n'}
+[5.565554] (vesc_msgs) StdoutLine: {'line': b'[ 90%] Built target vesc_msgs__rosidl_generator_py\n'}
+[5.614084] (-) TimerEvent: {}
+[5.616852] (vesc_msgs) StdoutLine: {'line': b'[100%] Built target vesc_msgs_s__rosidl_typesupport_introspection_c\n'}
+[5.617118] (vesc_msgs) StdoutLine: {'line': b'[100%] Built target vesc_msgs_s__rosidl_typesupport_c\n'}
+[5.617229] (vesc_msgs) StdoutLine: {'line': b'[100%] Built target vesc_msgs_s__rosidl_typesupport_fastrtps_c\n'}
+[5.651623] (vesc_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[5.675618] (vesc_msgs) StdoutLine: {'line': b'writing vesc_msgs.egg-info/PKG-INFO\n'}
+[5.675982] (vesc_msgs) StdoutLine: {'line': b'writing dependency_links to vesc_msgs.egg-info/dependency_links.txt\n'}
+[5.682182] (vesc_msgs) StdoutLine: {'line': b'writing top-level names to vesc_msgs.egg-info/top_level.txt\n'}
+[5.714143] (-) TimerEvent: {}
+[5.752495] (vesc_msgs) StdoutLine: {'line': b"reading manifest file 'vesc_msgs.egg-info/SOURCES.txt'\n"}
+[5.753274] (vesc_msgs) StdoutLine: {'line': b"writing manifest file 'vesc_msgs.egg-info/SOURCES.txt'\n"}
+[5.814243] (-) TimerEvent: {}
+[5.817489] (vesc_msgs) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_vesc_msgs_egg\n'}
+[5.838702] (vesc_msgs) CommandEnded: {'returncode': 0}
+[5.839545] (vesc_msgs) JobProgress: {'identifier': 'vesc_msgs', 'progress': 'install'}
+[5.857280] (vesc_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/chrono/vesc_ws/build/vesc_msgs'], 'cwd': '/home/chrono/vesc_ws/build/vesc_msgs', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'chrono', 'SSH_CLIENT': '10.140.125.222 26742 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/chrono', 'OLDPWD': '/home/chrono/vesc_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/chrono/vesc_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'chrono', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/chrono/vesc_ws/build/vesc_msgs', 'SSH_CONNECTION': '10.140.125.222 26742 10.141.194.197 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[5.872068] (vesc_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.872944] (vesc_msgs) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[5.873289] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/ament_index/resource_index/rosidl_interfaces/vesc_msgs\n'}
+[5.873525] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/msg/VescState.json\n'}
+[5.873732] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/msg/VescStateStamped.json\n'}
+[5.873930] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImu.json\n'}
+[5.874147] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImuStamped.json\n'}
+[5.874867] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__functions.h\n'}
+[5.875303] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__struct.h\n'}
+[5.875457] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__type_support.h\n'}
+[5.875601] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__functions.h\n'}
+[5.875739] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__struct.h\n'}
+[5.875876] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.h\n'}
+[5.876021] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__functions.h\n'}
+[5.876174] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__struct.h\n'}
+[5.876311] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__type_support.h\n'}
+[5.876449] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__functions.h\n'}
+[5.876584] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__struct.h\n'}
+[5.876720] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__type_support.h\n'}
+[5.876852] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[5.876986] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_imu.h\n'}
+[5.877134] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_imu_stamped.h\n'}
+[5.877268] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_state.h\n'}
+[5.877399] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_state_stamped.h\n'}
+[5.877626] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/environment/library_path.sh\n'}
+[5.877804] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/environment/library_path.dsv\n'}
+[5.878458] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_fastrtps_c.h\n'}
+[5.878601] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[5.878744] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_fastrtps_c.h\n'}
+[5.878883] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_fastrtps_c.h\n'}
+[5.879230] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[5.879715] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_introspection_c.h\n'}
+[5.879858] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_introspection_c.h\n'}
+[5.880006] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_introspection_c.h\n'}
+[5.880155] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_introspection_c.h\n'}
+[5.880289] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[5.880874] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__builder.hpp\n'}
+[5.881024] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__struct.hpp\n'}
+[5.881170] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__traits.hpp\n'}
+[5.881315] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__type_support.hpp\n'}
+[5.881453] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__builder.hpp\n'}
+[5.881601] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__struct.hpp\n'}
+[5.881736] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__traits.hpp\n'}
+[5.881873] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__type_support.hpp\n'}
+[5.882017] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__builder.hpp\n'}
+[5.882160] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__struct.hpp\n'}
+[5.882295] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__traits.hpp\n'}
+[5.882430] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__type_support.hpp\n'}
+[5.882566] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__builder.hpp\n'}
+[5.882700] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__struct.hpp\n'}
+[5.882834] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__traits.hpp\n'}
+[5.882974] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__type_support.hpp\n'}
+[5.883117] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[5.883250] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_imu.hpp\n'}
+[5.883381] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_imu_stamped.hpp\n'}
+[5.883512] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_state.hpp\n'}
+[5.883642] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/vesc_state_stamped.hpp\n'}
+[5.884289] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.884435] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.884576] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.884713] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[5.884846] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[5.885283] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.885426] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_imu_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.885565] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.885703] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/include/vesc_msgs/vesc_msgs/msg/detail/vesc_state_stamped__rosidl_typesupport_introspection_cpp.hpp\n'}
+[5.885896] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/environment/pythonpath.sh\n'}
+[5.886094] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/environment/pythonpath.dsv\n'}
+[5.886454] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs-1.1.0-py3.12.egg-info/PKG-INFO\n'}
+[5.886590] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs-1.1.0-py3.12.egg-info/SOURCES.txt\n'}
+[5.886724] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs-1.1.0-py3.12.egg-info/dependency_links.txt\n'}
+[5.886856] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs-1.1.0-py3.12.egg-info/top_level.txt\n'}
+[5.887614] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/__init__.py\n'}
+[5.887751] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_c.c\n'}
+[5.887883] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[5.888024] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/_vesc_msgs_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[5.888166] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/msg/__init__.py\n'}
+[5.888304] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/msg/_vesc_imu.py\n'}
+[5.888447] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/msg/_vesc_imu_s.c\n'}
+[5.888580] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/msg/_vesc_imu_stamped.py\n'}
+[5.888712] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/msg/_vesc_imu_stamped_s.c\n'}
+[5.888843] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/msg/_vesc_state.py\n'}
+[5.888974] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/msg/_vesc_state_s.c\n'}
+[5.889123] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/msg/_vesc_state_stamped.py\n'}
+[5.889257] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/msg/_vesc_state_stamped_s.c\n'}
+[5.889386] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_c.so\n'}
+[5.889522] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.889645] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[5.889977] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_fastrtps_c.so\n'}
+[5.890283] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_introspection_c.so\n'}
+[5.890571] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/vesc_msgs_s__rosidl_typesupport_c.so\n'}
+[5.890771] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/msg/VescState.idl\n'}
+[5.890961] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/msg/VescStateStamped.idl\n'}
+[5.891164] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImu.idl\n'}
+[5.891355] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImuStamped.idl\n'}
+[5.891538] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/msg/VescState.msg\n'}
+[5.891719] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/msg/VescStateStamped.msg\n'}
+[5.891899] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImu.msg\n'}
+[5.892097] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/msg/VescImuStamped.msg\n'}
+[5.892476] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/ament_index/resource_index/package_run_dependencies/vesc_msgs\n'}
+[5.892680] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/ament_index/resource_index/parent_prefix_path/vesc_msgs\n'}
+[5.892877] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/environment/ament_prefix_path.sh\n'}
+[5.893066] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/environment/ament_prefix_path.dsv\n'}
+[5.893259] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/environment/path.sh\n'}
+[5.893438] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/environment/path.dsv\n'}
+[5.893614] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/local_setup.bash\n'}
+[5.893789] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/local_setup.sh\n'}
+[5.893969] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/local_setup.zsh\n'}
+[5.894152] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/local_setup.dsv\n'}
+[5.894282] (vesc_msgs) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/package.dsv\n'}
+[5.911734] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/ament_index/resource_index/packages/vesc_msgs\n'}
+[5.911960] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[5.912226] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.912420] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[5.912616] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[5.912805] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[5.913002] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[5.913203] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[5.913397] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgsConfig.cmake\n'}
+[5.913526] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgsConfig-version.cmake\n'}
+[5.913709] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/package.xml\n'}
+[5.914071] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_generator_c.so\n'}
+[5.914300] (-) TimerEvent: {}
+[5.914523] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[5.914956] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_introspection_c.so\n'}
+[5.915325] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_c.so\n'}
+[5.915694] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[5.916094] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[5.916466] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_typesupport_cpp.so\n'}
+[5.969583] (vesc_msgs) StdoutLine: {'line': b"Listing '/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs'...\n"}
+[5.969841] (vesc_msgs) StdoutLine: {'line': b"Compiling '/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/__init__.py'...\n"}
+[5.969945] (vesc_msgs) StdoutLine: {'line': b"Listing '/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages/vesc_msgs/msg'...\n"}
+[5.981884] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/lib/libvesc_msgs__rosidl_generator_py.so\n'}
+[5.982222] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_cExport.cmake\n'}
+[5.982356] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.982483] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.982567] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.982686] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.982770] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.982884] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cExport.cmake\n'}
+[5.982975] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.983112] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_cppExport.cmake\n'}
+[5.983219] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.983303] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.983384] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.983508] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.983604] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[5.983686] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/vesc_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.983766] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_pyExport.cmake\n'}
+[5.983867] (vesc_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/chrono/vesc_ws/install/vesc_msgs/share/vesc_msgs/cmake/export_vesc_msgs__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.987179] (vesc_msgs) CommandEnded: {'returncode': 0}
+[6.014399] (-) TimerEvent: {}
+[6.036498] (vesc_msgs) JobEnded: {'identifier': 'vesc_msgs', 'rc': 0}
+[6.037871] (vesc_ackermann) JobStarted: {'identifier': 'vesc_ackermann'}
+[6.042555] (vesc_driver) JobStarted: {'identifier': 'vesc_driver'}
+[6.049660] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'cmake'}
+[6.050894] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '/home/chrono/vesc_ws/src/vesc/vesc_ackermann', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/chrono/vesc_ws/install/vesc_ackermann'], 'cwd': '/home/chrono/vesc_ws/build/vesc_ackermann', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'chrono', 'SSH_CLIENT': '10.140.125.222 26742 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/chrono', 'OLDPWD': '/home/chrono/vesc_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/chrono/vesc_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'chrono', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/chrono/vesc_ws/build/vesc_ackermann', 'SSH_CONNECTION': '10.140.125.222 26742 10.141.194.197 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[6.054888] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'cmake'}
+[6.055739] (vesc_driver) Command: {'cmd': ['/usr/bin/cmake', '/home/chrono/vesc_ws/src/vesc/vesc_driver', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/chrono/vesc_ws/install/vesc_driver'], 'cwd': '/home/chrono/vesc_ws/build/vesc_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'chrono', 'SSH_CLIENT': '10.140.125.222 26742 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/chrono', 'OLDPWD': '/home/chrono/vesc_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/chrono/vesc_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'chrono', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/chrono/vesc_ws/build/vesc_driver', 'SSH_CONNECTION': '10.140.125.222 26742 10.141.194.197 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[6.114541] (-) TimerEvent: {}
+[6.173411] (vesc_ackermann) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[6.176642] (vesc_driver) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[6.214669] (-) TimerEvent: {}
+[6.292071] (vesc_ackermann) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[6.294634] (vesc_driver) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[6.314795] (-) TimerEvent: {}
+[6.320241] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.321891] (vesc_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[6.414932] (-) TimerEvent: {}
+[6.497174] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.500495] (vesc_driver) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[6.512589] (vesc_ackermann) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.512974] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.513546] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.514989] (-) TimerEvent: {}
+[6.515181] (vesc_driver) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[6.515517] (vesc_driver) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[6.516093] (vesc_driver) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[6.527991] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.529834] (vesc_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[6.615142] (-) TimerEvent: {}
+[6.715612] (-) TimerEvent: {}
+[6.727954] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.730477] (vesc_driver) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[6.743759] (vesc_ackermann) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.744217] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.744977] (vesc_ackermann) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.745695] (vesc_driver) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[6.746140] (vesc_driver) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[6.746822] (vesc_driver) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[6.748162] (vesc_ackermann) StdoutLine: {'line': b'-- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)\n'}
+[6.749841] (vesc_driver) StdoutLine: {'line': b'-- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)\n'}
+[6.815717] (-) TimerEvent: {}
+[6.916215] (-) TimerEvent: {}
+[6.999115] (vesc_driver) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[6.999455] (vesc_ackermann) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[7.016303] (-) TimerEvent: {}
+[7.116658] (-) TimerEvent: {}
+[7.141392] (vesc_ackermann) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[7.141651] (vesc_driver) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[7.216758] (-) TimerEvent: {}
+[7.317122] (-) TimerEvent: {}
+[7.413937] (vesc_driver) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[7.415282] (vesc_ackermann) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[7.417164] (-) TimerEvent: {}
+[7.432945] (vesc_driver) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[7.434306] (vesc_ackermann) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[7.454990] (vesc_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.456491] (vesc_ackermann) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.479916] (vesc_driver) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.481540] (vesc_ackermann) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.517257] (-) TimerEvent: {}
+[7.582556] (vesc_driver) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[7.586377] (vesc_driver) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.617374] (-) TimerEvent: {}
+[7.683873] (vesc_ackermann) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[7.688001] (vesc_ackermann) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[7.706993] (vesc_driver) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[7.717471] (-) TimerEvent: {}
+[7.732397] (vesc_driver) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[7.769340] (vesc_driver) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.815938] (vesc_ackermann) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[7.817547] (-) TimerEvent: {}
+[7.841573] (vesc_ackermann) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[7.876331] (vesc_ackermann) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[7.917656] (-) TimerEvent: {}
+[8.017983] (-) TimerEvent: {}
+[8.020595] (vesc_driver) StdoutLine: {'line': b'-- Found asio_cmake_module: 1.2.0 (/opt/ros/jazzy/share/asio_cmake_module/cmake)\n'}
+[8.022280] (vesc_driver) StdoutLine: {'line': b'-- Found ASIO: /usr/include  \n'}
+[8.108764] (vesc_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.118034] (-) TimerEvent: {}
+[8.181803] (vesc_ackermann) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[8.208710] (vesc_ackermann) StderrLine: {'line': b'\x1b[0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/vesc_ackermann` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.\x1b[0m\n'}
+[8.216304] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[8.218128] (-) TimerEvent: {}
+[8.218426] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[8.218684] (vesc_ackermann) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/chrono/vesc_ws/src/vesc/vesc_ackermann/include\n'}
+[8.220030] (vesc_ackermann) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[8.220394] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[8.220573] (vesc_ackermann) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[8.221630] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.223367] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[8.223532] (vesc_ackermann) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[8.224204] (vesc_ackermann) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.228272] (vesc_ackermann) StdoutLine: {'line': b'-- Configuring done (2.2s)\n'}
+[8.263180] (vesc_driver) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[8.264699] (vesc_driver) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[8.281984] (vesc_ackermann) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[8.292892] (vesc_driver) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[8.300236] (vesc_ackermann) StdoutLine: {'line': b'-- Build files have been written to: /home/chrono/vesc_ws/build/vesc_ackermann\n'}
+[8.318231] (-) TimerEvent: {}
+[8.321395] (vesc_driver) StderrLine: {'line': b'\x1b[0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/vesc_driver` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.\x1b[0m\n'}
+[8.322481] (vesc_ackermann) CommandEnded: {'returncode': 0}
+[8.323172] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'build'}
+[8.324369] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chrono/vesc_ws/build/vesc_ackermann', '--', '-j4', '-l4'], 'cwd': '/home/chrono/vesc_ws/build/vesc_ackermann', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'chrono', 'SSH_CLIENT': '10.140.125.222 26742 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/chrono', 'OLDPWD': '/home/chrono/vesc_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/chrono/vesc_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'chrono', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/chrono/vesc_ws/build/vesc_ackermann', 'SSH_CONNECTION': '10.140.125.222 26742 10.141.194.197 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[8.330228] (vesc_driver) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[8.333011] (vesc_driver) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[8.333591] (vesc_driver) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/chrono/vesc_ws/src/vesc/vesc_driver/include\n'}
+[8.333712] (vesc_driver) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[8.335927] (vesc_driver) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[8.336108] (vesc_driver) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[8.337023] (vesc_driver) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[8.337152] (vesc_driver) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[8.338194] (vesc_driver) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[8.339087] (vesc_driver) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[8.341317] (vesc_driver) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[8.341473] (vesc_driver) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[8.342336] (vesc_driver) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[8.347400] (vesc_driver) StdoutLine: {'line': b'-- Configuring done (2.3s)\n'}
+[8.420157] (vesc_ackermann) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/ackermann_to_vesc_node.dir/rclcpp_components/node_main_ackermann_to_vesc_node.cpp.o\x1b[0m\n'}
+[8.420522] (-) TimerEvent: {}
+[8.420670] (vesc_ackermann) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/vesc_to_odom_node.dir/rclcpp_components/node_main_vesc_to_odom_node.cpp.o\x1b[0m\n'}
+[8.423514] (vesc_ackermann) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o\x1b[0m\n'}
+[8.425136] (vesc_ackermann) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o\x1b[0m\n'}
+[8.439244] (vesc_driver) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[8.463914] (vesc_driver) StdoutLine: {'line': b'-- Build files have been written to: /home/chrono/vesc_ws/build/vesc_driver\n'}
+[8.502178] (vesc_driver) CommandEnded: {'returncode': 0}
+[8.503064] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'build'}
+[8.503495] (vesc_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chrono/vesc_ws/build/vesc_driver', '--', '-j4', '-l4'], 'cwd': '/home/chrono/vesc_ws/build/vesc_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'chrono', 'SSH_CLIENT': '10.140.125.222 26742 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/chrono', 'OLDPWD': '/home/chrono/vesc_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/chrono/vesc_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'chrono', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/chrono/vesc_ws/build/vesc_driver', 'SSH_CONNECTION': '10.140.125.222 26742 10.141.194.197 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[8.520660] (-) TimerEvent: {}
+[8.622286] (-) TimerEvent: {}
+[8.691567] (vesc_driver) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver_node.dir/rclcpp_components/node_main_vesc_driver_node.cpp.o\x1b[0m\n'}
+[8.692806] (vesc_driver) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_driver.cpp.o\x1b[0m\n'}
+[8.712037] (vesc_driver) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_interface.cpp.o\x1b[0m\n'}
+[8.712373] (vesc_driver) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_packet.cpp.o\x1b[0m\n'}
+[8.724234] (-) TimerEvent: {}
+[8.824732] (-) TimerEvent: {}
+[8.928083] (-) TimerEvent: {}
+[9.031071] (-) TimerEvent: {}
+[9.131539] (-) TimerEvent: {}
+[9.236084] (-) TimerEvent: {}
+[9.336541] (-) TimerEvent: {}
+[9.437189] (-) TimerEvent: {}
+[9.538231] (-) TimerEvent: {}
+[9.641324] (-) TimerEvent: {}
+[9.741728] (-) TimerEvent: {}
+[9.842407] (-) TimerEvent: {}
+[9.946086] (-) TimerEvent: {}
+[10.049075] (-) TimerEvent: {}
+[10.149543] (-) TimerEvent: {}
+[10.250216] (-) TimerEvent: {}
+[10.352092] (-) TimerEvent: {}
+[10.454079] (-) TimerEvent: {}
+[10.556087] (-) TimerEvent: {}
+[10.656574] (-) TimerEvent: {}
+[10.760092] (-) TimerEvent: {}
+[10.860619] (-) TimerEvent: {}
+[10.964096] (-) TimerEvent: {}
+[11.064831] (-) TimerEvent: {}
+[11.168088] (-) TimerEvent: {}
+[11.268765] (-) TimerEvent: {}
+[11.369497] (-) TimerEvent: {}
+[11.464102] (vesc_driver) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/vesc_driver.dir/src/vesc_packet_factory.cpp.o\x1b[0m\n'}
+[11.469643] (-) TimerEvent: {}
+[11.575082] (-) TimerEvent: {}
+[11.675612] (-) TimerEvent: {}
+[11.779072] (-) TimerEvent: {}
+[11.879545] (-) TimerEvent: {}
+[11.980037] (-) TimerEvent: {}
+[12.083063] (-) TimerEvent: {}
+[12.183525] (-) TimerEvent: {}
+[12.287083] (-) TimerEvent: {}
+[12.387545] (-) TimerEvent: {}
+[12.492087] (-) TimerEvent: {}
+[12.592563] (-) TimerEvent: {}
+[12.695100] (-) TimerEvent: {}
+[12.797107] (-) TimerEvent: {}
+[12.900072] (-) TimerEvent: {}
+[13.000539] (-) TimerEvent: {}
+[13.101278] (-) TimerEvent: {}
+[13.206074] (-) TimerEvent: {}
+[13.306538] (-) TimerEvent: {}
+[13.409107] (-) TimerEvent: {}
+[13.512075] (-) TimerEvent: {}
+[13.612538] (-) TimerEvent: {}
+[13.716080] (-) TimerEvent: {}
+[13.816571] (-) TimerEvent: {}
+[13.917060] (-) TimerEvent: {}
+[14.019081] (-) TimerEvent: {}
+[14.121117] (-) TimerEvent: {}
+[14.224083] (-) TimerEvent: {}
+[14.327091] (-) TimerEvent: {}
+[14.427595] (-) TimerEvent: {}
+[14.529500] (-) TimerEvent: {}
+[14.630258] (-) TimerEvent: {}
+[14.734086] (-) TimerEvent: {}
+[14.834573] (-) TimerEvent: {}
+[14.937073] (-) TimerEvent: {}
+[15.037530] (-) TimerEvent: {}
+[15.140078] (-) TimerEvent: {}
+[15.240533] (-) TimerEvent: {}
+[15.350075] (-) TimerEvent: {}
+[15.457634] (-) TimerEvent: {}
+[15.560077] (-) TimerEvent: {}
+[15.660523] (-) TimerEvent: {}
+[15.761115] (-) TimerEvent: {}
+[15.866070] (-) TimerEvent: {}
+[15.966533] (-) TimerEvent: {}
+[16.068284] (-) TimerEvent: {}
+[16.170068] (-) TimerEvent: {}
+[16.273067] (-) TimerEvent: {}
+[16.374075] (-) TimerEvent: {}
+[16.474725] (-) TimerEvent: {}
+[16.575422] (-) TimerEvent: {}
+[16.679072] (-) TimerEvent: {}
+[16.779537] (-) TimerEvent: {}
+[16.883085] (-) TimerEvent: {}
+[16.983589] (-) TimerEvent: {}
+[17.084309] (-) TimerEvent: {}
+[17.188094] (-) TimerEvent: {}
+[17.288580] (-) TimerEvent: {}
+[17.389210] (-) TimerEvent: {}
+[17.494076] (-) TimerEvent: {}
+[17.594567] (-) TimerEvent: {}
+[17.695232] (-) TimerEvent: {}
+[17.795928] (-) TimerEvent: {}
+[17.896636] (-) TimerEvent: {}
+[17.999307] (-) TimerEvent: {}
+[18.102081] (-) TimerEvent: {}
+[18.202526] (-) TimerEvent: {}
+[18.306076] (-) TimerEvent: {}
+[18.406555] (-) TimerEvent: {}
+[18.507249] (-) TimerEvent: {}
+[18.607925] (-) TimerEvent: {}
+[18.711100] (-) TimerEvent: {}
+[18.811567] (-) TimerEvent: {}
+[18.912239] (-) TimerEvent: {}
+[19.014074] (-) TimerEvent: {}
+[19.114730] (-) TimerEvent: {}
+[19.215397] (-) TimerEvent: {}
+[19.318290] (-) TimerEvent: {}
+[19.419243] (-) TimerEvent: {}
+[19.519959] (-) TimerEvent: {}
+[19.620640] (-) TimerEvent: {}
+[19.722308] (-) TimerEvent: {}
+[19.825284] (-) TimerEvent: {}
+[19.927076] (-) TimerEvent: {}
+[20.029076] (-) TimerEvent: {}
+[20.129702] (-) TimerEvent: {}
+[20.232066] (-) TimerEvent: {}
+[20.332659] (-) TimerEvent: {}
+[20.434235] (-) TimerEvent: {}
+[20.537066] (-) TimerEvent: {}
+[20.638068] (-) TimerEvent: {}
+[20.740077] (-) TimerEvent: {}
+[20.840740] (-) TimerEvent: {}
+[20.941409] (-) TimerEvent: {}
+[21.042080] (-) TimerEvent: {}
+[21.144291] (-) TimerEvent: {}
+[21.247093] (-) TimerEvent: {}
+[21.347709] (-) TimerEvent: {}
+[21.450678] (-) TimerEvent: {}
+[21.553202] (-) TimerEvent: {}
+[21.664074] (-) TimerEvent: {}
+[21.766103] (-) TimerEvent: {}
+[21.891146] (-) TimerEvent: {}
+[22.002817] (-) TimerEvent: {}
+[22.106080] (-) TimerEvent: {}
+[22.206805] (-) TimerEvent: {}
+[22.310826] (-) TimerEvent: {}
+[22.411239] (-) TimerEvent: {}
+[22.511626] (-) TimerEvent: {}
+[22.613077] (-) TimerEvent: {}
+[22.713660] (-) TimerEvent: {}
+[22.817063] (-) TimerEvent: {}
+[22.917472] (-) TimerEvent: {}
+[23.018079] (-) TimerEvent: {}
+[23.118468] (-) TimerEvent: {}
+[23.218841] (-) TimerEvent: {}
+[23.319254] (-) TimerEvent: {}
+[23.419665] (-) TimerEvent: {}
+[23.520106] (-) TimerEvent: {}
+[23.627342] (vesc_driver) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX executable vesc_driver_node\x1b[0m\n'}
+[23.627715] (-) TimerEvent: {}
+[23.627935] (vesc_ackermann) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX executable vesc_to_odom_node\x1b[0m\n'}
+[23.628269] (vesc_ackermann) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX executable ackermann_to_vesc_node\x1b[0m\n'}
+[23.727925] (-) TimerEvent: {}
+[23.830238] (-) TimerEvent: {}
+[23.933205] (-) TimerEvent: {}
+[24.036089] (-) TimerEvent: {}
+[24.136938] (-) TimerEvent: {}
+[24.244127] (-) TimerEvent: {}
+[24.344705] (-) TimerEvent: {}
+[24.447165] (-) TimerEvent: {}
+[24.497746] (vesc_ackermann) StdoutLine: {'line': b'[ 85%] Built target ackermann_to_vesc_node\n'}
+[24.501685] (vesc_ackermann) StdoutLine: {'line': b'[ 85%] Built target vesc_to_odom_node\n'}
+[24.540834] (vesc_driver) StdoutLine: {'line': b'[ 60%] Built target vesc_driver_node\n'}
+[24.547303] (-) TimerEvent: {}
+[24.648217] (-) TimerEvent: {}
+[24.749002] (-) TimerEvent: {}
+[24.849465] (-) TimerEvent: {}
+[24.950135] (-) TimerEvent: {}
+[25.050576] (-) TimerEvent: {}
+[25.151268] (-) TimerEvent: {}
+[25.251713] (-) TimerEvent: {}
+[25.352380] (-) TimerEvent: {}
+[25.452885] (-) TimerEvent: {}
+[25.553723] (-) TimerEvent: {}
+[25.654195] (-) TimerEvent: {}
+[25.754834] (-) TimerEvent: {}
+[25.855384] (-) TimerEvent: {}
+[25.956335] (-) TimerEvent: {}
+[26.056937] (-) TimerEvent: {}
+[26.157672] (-) TimerEvent: {}
+[26.258400] (-) TimerEvent: {}
+[26.358865] (-) TimerEvent: {}
+[26.459321] (-) TimerEvent: {}
+[26.560014] (-) TimerEvent: {}
+[26.660489] (-) TimerEvent: {}
+[26.761156] (-) TimerEvent: {}
+[26.861631] (-) TimerEvent: {}
+[26.962302] (-) TimerEvent: {}
+[27.062760] (-) TimerEvent: {}
+[27.163427] (-) TimerEvent: {}
+[27.263915] (-) TimerEvent: {}
+[27.364594] (-) TimerEvent: {}
+[27.465067] (-) TimerEvent: {}
+[27.566095] (-) TimerEvent: {}
+[27.667092] (-) TimerEvent: {}
+[27.767530] (-) TimerEvent: {}
+[27.868238] (-) TimerEvent: {}
+[27.968683] (-) TimerEvent: {}
+[28.069347] (-) TimerEvent: {}
+[28.169768] (-) TimerEvent: {}
+[28.270416] (-) TimerEvent: {}
+[28.370905] (-) TimerEvent: {}
+[28.471554] (-) TimerEvent: {}
+[28.571962] (-) TimerEvent: {}
+[28.672652] (-) TimerEvent: {}
+[28.773104] (-) TimerEvent: {}
+[28.873759] (-) TimerEvent: {}
+[28.974213] (-) TimerEvent: {}
+[29.074854] (-) TimerEvent: {}
+[29.175335] (-) TimerEvent: {}
+[29.275954] (-) TimerEvent: {}
+[29.376564] (-) TimerEvent: {}
+[29.477197] (-) TimerEvent: {}
+[29.577587] (-) TimerEvent: {}
+[29.677981] (-) TimerEvent: {}
+[29.778349] (-) TimerEvent: {}
+[29.878713] (-) TimerEvent: {}
+[29.979095] (-) TimerEvent: {}
+[30.079469] (-) TimerEvent: {}
+[30.179951] (-) TimerEvent: {}
+[30.280474] (-) TimerEvent: {}
+[30.381080] (-) TimerEvent: {}
+[30.481500] (-) TimerEvent: {}
+[30.581934] (-) TimerEvent: {}
+[30.682408] (-) TimerEvent: {}
+[30.783031] (-) TimerEvent: {}
+[30.883539] (-) TimerEvent: {}
+[30.984422] (-) TimerEvent: {}
+[31.084914] (-) TimerEvent: {}
+[31.185652] (-) TimerEvent: {}
+[31.286066] (-) TimerEvent: {}
+[31.389243] (-) TimerEvent: {}
+[31.489603] (-) TimerEvent: {}
+[31.589978] (-) TimerEvent: {}
+[31.690320] (-) TimerEvent: {}
+[31.790662] (-) TimerEvent: {}
+[31.891039] (-) TimerEvent: {}
+[31.991383] (-) TimerEvent: {}
+[32.091747] (-) TimerEvent: {}
+[32.192133] (-) TimerEvent: {}
+[32.292491] (-) TimerEvent: {}
+[32.392830] (-) TimerEvent: {}
+[32.493138] (-) TimerEvent: {}
+[32.593402] (-) TimerEvent: {}
+[32.693679] (-) TimerEvent: {}
+[32.793982] (-) TimerEvent: {}
+[32.894263] (-) TimerEvent: {}
+[32.994539] (-) TimerEvent: {}
+[33.094874] (-) TimerEvent: {}
+[33.195333] (-) TimerEvent: {}
+[33.295700] (-) TimerEvent: {}
+[33.396066] (-) TimerEvent: {}
+[33.496442] (-) TimerEvent: {}
+[33.596804] (-) TimerEvent: {}
+[33.697161] (-) TimerEvent: {}
+[33.797487] (-) TimerEvent: {}
+[33.897816] (-) TimerEvent: {}
+[33.998216] (-) TimerEvent: {}
+[34.098772] (-) TimerEvent: {}
+[34.199282] (-) TimerEvent: {}
+[34.299651] (-) TimerEvent: {}
+[34.400159] (-) TimerEvent: {}
+[34.500866] (-) TimerEvent: {}
+[34.516711] (vesc_driver) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_driver.so\x1b[0m\n'}
+[34.601095] (-) TimerEvent: {}
+[34.701665] (-) TimerEvent: {}
+[34.802008] (-) TimerEvent: {}
+[34.902423] (-) TimerEvent: {}
+[35.003025] (-) TimerEvent: {}
+[35.103511] (-) TimerEvent: {}
+[35.203919] (-) TimerEvent: {}
+[35.304380] (-) TimerEvent: {}
+[35.404884] (-) TimerEvent: {}
+[35.505267] (-) TimerEvent: {}
+[35.605876] (-) TimerEvent: {}
+[35.706721] (-) TimerEvent: {}
+[35.807227] (-) TimerEvent: {}
+[35.908015] (-) TimerEvent: {}
+[36.008705] (-) TimerEvent: {}
+[36.109552] (-) TimerEvent: {}
+[36.210253] (-) TimerEvent: {}
+[36.311014] (-) TimerEvent: {}
+[36.411377] (-) TimerEvent: {}
+[36.511743] (-) TimerEvent: {}
+[36.612091] (-) TimerEvent: {}
+[36.712567] (-) TimerEvent: {}
+[36.784044] (vesc_driver) StdoutLine: {'line': b'[ 70%] Built target vesc_driver\n'}
+[36.812695] (-) TimerEvent: {}
+[36.830229] (vesc_driver) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/vesc_device_namer.dir/src/vesc_device_uuid_lookup.cpp.o\x1b[0m\n'}
+[36.830596] (vesc_driver) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding CXX object CMakeFiles/vesc_device_namer.dir/src/vesc_device_namer.cpp.o\x1b[0m\n'}
+[36.915095] (-) TimerEvent: {}
+[37.015590] (-) TimerEvent: {}
+[37.116034] (-) TimerEvent: {}
+[37.216465] (-) TimerEvent: {}
+[37.316859] (-) TimerEvent: {}
+[37.329941] (vesc_ackermann) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libvesc_ackermann.so\x1b[0m\n'}
+[37.418145] (-) TimerEvent: {}
+[37.518785] (-) TimerEvent: {}
+[37.621133] (-) TimerEvent: {}
+[37.721850] (-) TimerEvent: {}
+[37.824598] (-) TimerEvent: {}
+[37.926534] (-) TimerEvent: {}
+[38.027803] (-) TimerEvent: {}
+[38.129537] (-) TimerEvent: {}
+[38.230609] (-) TimerEvent: {}
+[38.331702] (-) TimerEvent: {}
+[38.432728] (-) TimerEvent: {}
+[38.533652] (-) TimerEvent: {}
+[38.634249] (-) TimerEvent: {}
+[38.735283] (-) TimerEvent: {}
+[38.836180] (-) TimerEvent: {}
+[38.853391] (vesc_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable vesc_device_namer\x1b[0m\n'}
+[38.936479] (-) TimerEvent: {}
+[39.037737] (-) TimerEvent: {}
+[39.138701] (-) TimerEvent: {}
+[39.239653] (-) TimerEvent: {}
+[39.340748] (-) TimerEvent: {}
+[39.441414] (-) TimerEvent: {}
+[39.542535] (-) TimerEvent: {}
+[39.643473] (-) TimerEvent: {}
+[39.744348] (-) TimerEvent: {}
+[39.844933] (-) TimerEvent: {}
+[39.945525] (-) TimerEvent: {}
+[40.020112] (vesc_ackermann) StdoutLine: {'line': b'[100%] Built target vesc_ackermann\n'}
+[40.045686] (-) TimerEvent: {}
+[40.047956] (vesc_ackermann) CommandEnded: {'returncode': 0}
+[40.055146] (vesc_ackermann) JobProgress: {'identifier': 'vesc_ackermann', 'progress': 'install'}
+[40.057889] (vesc_ackermann) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/chrono/vesc_ws/build/vesc_ackermann'], 'cwd': '/home/chrono/vesc_ws/build/vesc_ackermann', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'chrono', 'SSH_CLIENT': '10.140.125.222 26742 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/chrono', 'OLDPWD': '/home/chrono/vesc_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/chrono/vesc_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'chrono', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/chrono/vesc_ws/build/vesc_ackermann', 'SSH_CONNECTION': '10.140.125.222 26742 10.141.194.197 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[40.082454] (vesc_ackermann) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[40.083212] (vesc_ackermann) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[40.084321] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node\n'}
+[40.110538] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node\n'}
+[40.129896] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp\n'}
+[40.145783] (-) TimerEvent: {}
+[40.146392] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp\n'}
+[40.166775] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh\n'}
+[40.183679] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv\n'}
+[40.207282] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/lib/libvesc_ackermann.so\n'}
+[40.230538] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml\n'}
+[40.245931] (-) TimerEvent: {}
+[40.248876] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml\n'}
+[40.259373] (vesc_driver) StdoutLine: {'line': b'[100%] Built target vesc_device_namer\n'}
+[40.266320] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann\n'}
+[40.281473] (vesc_driver) CommandEnded: {'returncode': 0}
+[40.282300] (vesc_driver) JobProgress: {'identifier': 'vesc_driver', 'progress': 'install'}
+[40.282698] (vesc_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/chrono/vesc_ws/build/vesc_driver'], 'cwd': '/home/chrono/vesc_ws/build/vesc_driver', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'chrono', 'SSH_CLIENT': '10.140.125.222 26742 22', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/chrono', 'OLDPWD': '/home/chrono/vesc_ws', 'SSH_TTY': '/dev/pts/1', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/chrono/vesc_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'chrono', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '6', 'PATH': '/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/chrono/vesc_ws/build/vesc_driver', 'SSH_CONNECTION': '10.140.125.222 26742 10.141.194.197 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[40.284456] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann\n'}
+[40.298148] (vesc_driver) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[40.300587] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh\n'}
+[40.304751] (vesc_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[40.305300] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/lib/vesc_driver/vesc_driver_node\n'}
+[40.318285] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv\n'}
+[40.323471] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/include/vesc_driver/crc.hpp\n'}
+[40.336138] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh\n'}
+[40.341166] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/include/vesc_driver/datatypes.hpp\n'}
+[40.346043] (-) TimerEvent: {}
+[40.354082] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv\n'}
+[40.358538] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/include/vesc_driver/vesc_device_uuid_lookup.hpp\n'}
+[40.371803] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash\n'}
+[40.376091] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/include/vesc_driver/vesc_driver.hpp\n'}
+[40.389731] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh\n'}
+[40.393158] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/include/vesc_driver/vesc_interface.hpp\n'}
+[40.407569] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh\n'}
+[40.409829] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/include/vesc_driver/vesc_packet.hpp\n'}
+[40.425335] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv\n'}
+[40.426519] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/include/vesc_driver/vesc_packet_factory.hpp\n'}
+[40.442831] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/package.dsv\n'}
+[40.443182] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/environment/library_path.sh\n'}
+[40.446152] (-) TimerEvent: {}
+[40.460716] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/environment/library_path.dsv\n'}
+[40.461006] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann\n'}
+[40.478358] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann\n'}
+[40.478630] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/lib/libvesc_driver.so\n'}
+[40.495339] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[40.495679] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/lib/vesc_driver/vesc_device_namer\n'}
+[40.512539] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[40.512895] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/launch/vesc_driver_node.launch.py\n'}
+[40.529918] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[40.530294] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/params/vesc_config.yaml\n'}
+[40.546276] (-) TimerEvent: {}
+[40.552760] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake\n'}
+[40.553155] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/ament_index/resource_index/package_run_dependencies/vesc_driver\n'}
+[40.571013] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake\n'}
+[40.571355] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/ament_index/resource_index/parent_prefix_path/vesc_driver\n'}
+[40.588347] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.sh\n'}
+[40.588615] (vesc_ackermann) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/package.xml\n'}
+[40.605264] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/environment/ament_prefix_path.dsv\n'}
+[40.608140] (vesc_ackermann) CommandEnded: {'returncode': 0}
+[40.622689] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/environment/path.sh\n'}
+[40.639439] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/environment/path.dsv\n'}
+[40.641900] (vesc_ackermann) JobEnded: {'identifier': 'vesc_ackermann', 'rc': 0}
+[40.646363] (-) TimerEvent: {}
+[40.655829] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/local_setup.bash\n'}
+[40.672316] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/local_setup.sh\n'}
+[40.689389] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/local_setup.zsh\n'}
+[40.706316] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/local_setup.dsv\n'}
+[40.722766] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/package.dsv\n'}
+[40.739299] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/ament_index/resource_index/packages/vesc_driver\n'}
+[40.746474] (-) TimerEvent: {}
+[40.755946] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/ament_index/resource_index/rclcpp_components/vesc_driver\n'}
+[40.773362] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[40.789801] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[40.806538] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[40.822998] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig.cmake\n'}
+[40.840115] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/cmake/vesc_driverConfig-version.cmake\n'}
+[40.846571] (-) TimerEvent: {}
+[40.857567] (vesc_driver) StdoutLine: {'line': b'-- Symlinking: /home/chrono/vesc_ws/install/vesc_driver/share/vesc_driver/package.xml\n'}
+[40.876603] (vesc_driver) CommandEnded: {'returncode': 0}
+[40.910981] (vesc_driver) JobEnded: {'identifier': 'vesc_driver', 'rc': 0}
+[40.912101] (-) EventReactorShutdown: {}

@@ -1,0 +1,40 @@
+[0.014s] Invoking command in '/home/chrono/vesc_ws/build/vesc_ackermann': AMENT_PREFIX_PATH=/home/chrono/vesc_ws/install/vesc_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chrono/vesc_ws/install/vesc_msgs:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chrono/vesc_ws/install/vesc_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/chrono/vesc_ws/src/vesc/vesc_ackermann -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/chrono/vesc_ws/install/vesc_ackermann
+[0.130s] -- The C compiler identification is GNU 13.3.0
+[0.249s] -- The CXX compiler identification is GNU 13.3.0
+[0.277s] -- Detecting C compiler ABI info
+[0.454s] -- Detecting C compiler ABI info - done
+[0.468s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.468s] -- Detecting C compile features
+[0.469s] -- Detecting C compile features - done
+[0.484s] -- Detecting CXX compiler ABI info
+[0.677s] -- Detecting CXX compiler ABI info - done
+[0.692s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.692s] -- Detecting CXX compile features
+[0.693s] -- Detecting CXX compile features - done
+[0.696s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[0.938s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.081s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.350s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.369s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.391s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.416s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.614s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.618s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.748s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.774s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.808s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.109s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[2.133s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/vesc_ackermann` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[2.141s] -- Added test 'copyright' to check source files copyright and LICENSE
+[2.142s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.143s] -- Configured cppcheck include dirs: /home/chrono/vesc_ws/src/vesc/vesc_ackermann/include
+[2.143s] -- Configured cppcheck exclude dirs and/or files: 
+[2.144s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[2.144s] -- Configured cpplint exclude dirs and/or files: 
+[2.145s] -- Added test 'lint_cmake' to check CMake code style
+[2.147s] -- Added test 'uncrustify' to check C / C++ code style
+[2.147s] -- Configured uncrustify additional arguments: 
+[2.148s] -- Added test 'xmllint' to check XML markup files
+[2.152s] -- Configuring done (2.1s)
+[2.187s] -- Generating done (0.0s)
+[2.197s] -- Build files have been written to: /home/chrono/vesc_ws/build/vesc_ackermann

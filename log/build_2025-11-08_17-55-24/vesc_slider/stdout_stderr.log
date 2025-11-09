@@ -1,0 +1,30 @@
+running develop
+Removing /home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages/vesc-slider.egg-link (link to .)
+running egg_info
+writing ../../build/vesc_slider/vesc_slider.egg-info/PKG-INFO
+writing dependency_links to ../../build/vesc_slider/vesc_slider.egg-info/dependency_links.txt
+writing entry points to ../../build/vesc_slider/vesc_slider.egg-info/entry_points.txt
+writing requirements to ../../build/vesc_slider/vesc_slider.egg-info/requires.txt
+writing top-level names to ../../build/vesc_slider/vesc_slider.egg-info/top_level.txt
+reading manifest file '../../build/vesc_slider/vesc_slider.egg-info/SOURCES.txt'
+writing manifest file '../../build/vesc_slider/vesc_slider.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+creating /home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages/vesc_slider
+copying /home/chrono/vesc_ws/build/vesc_slider/build/lib/vesc_slider/vesc_slider_node.py -> /home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages/vesc_slider
+copying /home/chrono/vesc_ws/build/vesc_slider/build/lib/vesc_slider/__init__.py -> /home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages/vesc_slider
+byte-compiling /home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages/vesc_slider/vesc_slider_node.py to vesc_slider_node.cpython-312.pyc
+byte-compiling /home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages/vesc_slider/__init__.py to __init__.cpython-312.pyc
+running install_data
+copying resource/vesc_slider -> /home/chrono/vesc_ws/install/vesc_slider/share/ament_index/resource_index/packages
+copying resource/vesc_slider -> /home/chrono/vesc_ws/install/vesc_slider/share/ament_index/resource_index/packages
+copying package.xml -> /home/chrono/vesc_ws/install/vesc_slider/share/vesc_slider
+copying launch/vesc_slider.launch.py -> /home/chrono/vesc_ws/install/vesc_slider/share/vesc_slider/launch
+copying package.xml -> /home/chrono/vesc_ws/install/vesc_slider/share/vesc_slider
+running install_egg_info
+Copying ../../build/vesc_slider/vesc_slider.egg-info to /home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages/vesc_slider-0.0.0-py3.12.egg-info
+running install_scripts
+Installing vesc_slider script to /home/chrono/vesc_ws/install/vesc_slider/lib/vesc_slider
+writing list of installed files to '/home/chrono/vesc_ws/build/vesc_slider/install.log'

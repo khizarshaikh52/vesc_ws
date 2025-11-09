@@ -1,0 +1,9 @@
+chrono@chrono-desktop:~/vesc_ws$ ros2 launch vesc_slider vesc_slider.launch.py
+[INFO] [launch]: All log files can be found below /home/chrono/.ros/log/2025-11-08-18-00-28-727306-chrono-desktop-3800
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [vesc_driver_node-1]: process started with pid [3803]
+[INFO] [vesc_slider-2]: process started with pid [3804]
+[vesc_driver_node-1] [INFO] [1762646428.884507620] [IoContext::IoContext]: Thread(s) Created: 2
+[vesc_driver_node-1] [INFO] [1762646428.928062427] [vesc_driver]: -=75_300_R2=- hardware paired 0
+[vesc_driver_node-1] [INFO] [1762646428.941508379] [vesc_driver]: Connected to VESC with firmware version 5.2
+[vesc_driver_node-1] [INFO] [1762646428.946877401] [vesc_driver]: -=75_300_R2=- hardware paired 0

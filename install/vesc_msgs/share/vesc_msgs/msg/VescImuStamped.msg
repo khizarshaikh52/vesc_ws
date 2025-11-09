@@ -1,0 +1,1 @@
+/home/chrono/vesc_ws/src/vesc/vesc_msgs/msg/VescImuStamped.msg

@@ -1,0 +1,2 @@
+[console_scripts]
+vesc_slider = vesc_slider.vesc_slider_node:main

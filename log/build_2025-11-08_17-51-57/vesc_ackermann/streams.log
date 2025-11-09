@@ -1,0 +1,64 @@
+[0.021s] Invoking command in '/home/chrono/vesc_ws/build/vesc_ackermann': CMAKE_PREFIX_PATH=/home/chrono/vesc_ws/install/vesc_msgs:/home/chrono/vesc_ws/install/vesc:/home/chrono/vesc_ws/install/vesc_driver:/home/chrono/vesc_ws/install/vesc_ackermann:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/chrono/vesc_ws/install/vesc_slider:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chrono/vesc_ws/install/vesc_msgs/lib:/home/chrono/vesc_ws/install/vesc_driver/lib:/home/chrono/vesc_ws/install/vesc_ackermann/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/chrono/vesc_ws/build/vesc_ackermann -- -j4 -l4
+[0.107s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[0.493s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.750s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.764s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.780s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.799s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.005s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.007s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.101s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.468s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.477s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/vesc_ackermann` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[1.486s] -- Added test 'copyright' to check source files copyright and LICENSE
+[1.488s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.488s] -- Configured cppcheck include dirs: /home/chrono/vesc_ws/src/vesc/vesc_ackermann/include
+[1.488s] -- Configured cppcheck exclude dirs and/or files: 
+[1.490s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[1.490s] -- Configured cpplint exclude dirs and/or files: 
+[1.490s] -- Added test 'lint_cmake' to check CMake code style
+[1.492s] -- Added test 'uncrustify' to check C / C++ code style
+[1.492s] -- Configured uncrustify additional arguments: 
+[1.492s] -- Added test 'xmllint' to check XML markup files
+[1.500s] -- Configuring done (1.4s)
+[1.561s] -- Generating done (0.0s)
+[1.586s] -- Build files have been written to: /home/chrono/vesc_ws/build/vesc_ackermann
+[1.741s] [ 42%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/ackermann_to_vesc.cpp.o[0m
+[1.741s] [ 42%] Built target vesc_to_odom_node
+[1.746s] [ 71%] Built target ackermann_to_vesc_node
+[1.755s] [ 85%] [32mBuilding CXX object CMakeFiles/vesc_ackermann.dir/src/vesc_to_odom.cpp.o[0m
+[25.350s] [100%] [32m[1mLinking CXX shared library libvesc_ackermann.so[0m
+[27.945s] [100%] Built target vesc_ackermann
+[27.979s] Invoked command in '/home/chrono/vesc_ws/build/vesc_ackermann' returned '0': CMAKE_PREFIX_PATH=/home/chrono/vesc_ws/install/vesc_msgs:/home/chrono/vesc_ws/install/vesc:/home/chrono/vesc_ws/install/vesc_driver:/home/chrono/vesc_ws/install/vesc_ackermann:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/chrono/vesc_ws/install/vesc_slider:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chrono/vesc_ws/install/vesc_msgs/lib:/home/chrono/vesc_ws/install/vesc_driver/lib:/home/chrono/vesc_ws/install/vesc_ackermann/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/chrono/vesc_ws/build/vesc_ackermann -- -j4 -l4
+[27.989s] Invoking command in '/home/chrono/vesc_ws/build/vesc_ackermann': CMAKE_PREFIX_PATH=/home/chrono/vesc_ws/install/vesc_msgs:/home/chrono/vesc_ws/install/vesc:/home/chrono/vesc_ws/install/vesc_driver:/home/chrono/vesc_ws/install/vesc_ackermann:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/chrono/vesc_ws/install/vesc_slider:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chrono/vesc_ws/install/vesc_msgs/lib:/home/chrono/vesc_ws/install/vesc_driver/lib:/home/chrono/vesc_ws/install/vesc_ackermann/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/chrono/vesc_ws/build/vesc_ackermann
+[28.011s] -- Install configuration: ""
+[28.012s] -- Execute custom install script
+[28.020s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/lib/vesc_ackermann/ackermann_to_vesc_node
+[28.021s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/lib/vesc_ackermann/vesc_to_odom_node
+[28.022s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/include/vesc_ackermann/ackermann_to_vesc.hpp
+[28.023s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/include/vesc_ackermann/vesc_to_odom.hpp
+[28.024s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.sh
+[28.025s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/environment/library_path.dsv
+[28.026s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/lib/libvesc_ackermann.so
+[28.027s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/launch/ackermann_to_vesc_node.launch.xml
+[28.028s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/launch/vesc_to_odom_node.launch.xml
+[28.029s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/ament_index/resource_index/package_run_dependencies/vesc_ackermann
+[28.030s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/ament_index/resource_index/parent_prefix_path/vesc_ackermann
+[28.030s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.sh
+[28.031s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/environment/ament_prefix_path.dsv
+[28.031s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.sh
+[28.032s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/environment/path.dsv
+[28.033s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.bash
+[28.034s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.sh
+[28.034s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.zsh
+[28.035s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/local_setup.dsv
+[28.035s] -- Symlinking: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/package.dsv
+[28.063s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/ament_index/resource_index/packages/vesc_ackermann
+[28.070s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/ament_index/resource_index/rclcpp_components/vesc_ackermann
+[28.071s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_dependencies-extras.cmake
+[28.071s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_include_directories-extras.cmake
+[28.072s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/ament_cmake_export_libraries-extras.cmake
+[28.073s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig.cmake
+[28.074s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/cmake/vesc_ackermannConfig-version.cmake
+[28.075s] -- Up-to-date symlink: /home/chrono/vesc_ws/install/vesc_ackermann/share/vesc_ackermann/package.xml
+[28.081s] Invoked command in '/home/chrono/vesc_ws/build/vesc_ackermann' returned '0': CMAKE_PREFIX_PATH=/home/chrono/vesc_ws/install/vesc_msgs:/home/chrono/vesc_ws/install/vesc:/home/chrono/vesc_ws/install/vesc_driver:/home/chrono/vesc_ws/install/vesc_ackermann:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/chrono/vesc_ws/install/vesc_slider:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chrono/vesc_ws/install/vesc_msgs/lib:/home/chrono/vesc_ws/install/vesc_driver/lib:/home/chrono/vesc_ws/install/vesc_ackermann/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/chrono/vesc_ws/install/vesc_msgs/lib/python3.12/site-packages:/home/chrono/vesc_ws/install/vesc_slider/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/chrono/vesc_ws/build/vesc_ackermann
