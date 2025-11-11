@@ -4,6 +4,3 @@ source;share/vesc_slider/hook/pythonpath.sh
 source;share/vesc_slider/hook/ament_prefix_path.ps1
 source;share/vesc_slider/hook/ament_prefix_path.dsv
 source;share/vesc_slider/hook/ament_prefix_path.sh
-source;../../build/vesc_slider/share/vesc_slider/hook/pythonpath_develop.ps1
-source;../../build/vesc_slider/share/vesc_slider/hook/pythonpath_develop.dsv
-source;../../build/vesc_slider/share/vesc_slider/hook/pythonpath_develop.sh

@@ -10,12 +10,8 @@ setup.py
 ../../build/vesc_slider/vesc_slider.egg-info/zip-safe
 launch/vesc_slider.launch.py
 resource/vesc_slider
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
 vesc_slider/__init__.py
 vesc_slider/vesc_slider_node.py
-vesc_slider.egg-info/PKG-INFO
-vesc_slider.egg-info/SOURCES.txt
-vesc_slider.egg-info/dependency_links.txt
-vesc_slider.egg-info/entry_points.txt
-vesc_slider.egg-info/requires.txt
-vesc_slider.egg-info/top_level.txt
-vesc_slider.egg-info/zip-safe
